@@ -1,6 +1,3 @@
-# Add your own tasks in files placed in lib/tasks ending in .rake,
-# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
+# Ruby on Rails で開発してみよう
 
-require_relative 'config/application'
-
-Rails.application.load_tasks
+## このチュートリアルではRuby on Railsを実践的に学習します
