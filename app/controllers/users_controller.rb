@@ -24,7 +24,7 @@ class UsersController < ApplicationController
       end
     end
     @dates = @user.attendances.where('worked_on >= ? and worked_on <= ?', @first_day, @last_day)
-    # byebug
+    @worked_sum = @dates.where.not(started_at: nil).count
   end
   
   def new
